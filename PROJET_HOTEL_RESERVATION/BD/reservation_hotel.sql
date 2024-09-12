@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : lun. 09 sep. 2024 à 17:59
+-- Généré le : jeu. 12 sep. 2024 à 13:31
 -- Version du serveur : 10.4.27-MariaDB
 -- Version de PHP : 8.2.0
 
@@ -85,12 +85,12 @@ CREATE TABLE `reservation` (
 --
 
 INSERT INTO `reservation` (`id`, `chambre_id`, `client_id`, `date_entree`, `date_sortie`, `status`) VALUES
-(2, 1, 1, '2024-08-15', '2024-08-25', 'CONFIRME'),
+(2, 1, 1, '2024-08-15', '2024-08-25', 'confirme'),
 (3, 1, 1, '2024-08-30', '2024-09-05', 'CONFIRME'),
 (4, 2, 2, '2024-09-10', '2024-09-20', 'CONFIRME'),
 (5, 1, 2, '2024-09-25', '2024-09-30', 'ANNULEE'),
 (6, 1, 1, '2024-09-01', '2024-09-05', 'Confirmé'),
-(7, 2, 1, '0000-00-00', '2024-09-05', 'Confirmé');
+(7, 2, 1, '2024-09-03', '2024-09-05', 'Confirmé');
 
 --
 -- Index pour les tables déchargées
