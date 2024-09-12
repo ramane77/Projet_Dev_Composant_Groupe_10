@@ -49,11 +49,15 @@ class Reservation(db.Model):
     client = db.relationship('Clients', backref=db.backref('reservations', lazy=True))
 
     def to_dict(self):
+
         return {
             'id': self.id,
             'chambre_id': self.chambre_id,
             'client_id': self.client_id,
-            'date_entree': self.date_entree.isoformat(),
-            'date_sortie': self.date_sortie.isoformat(),
-            'status': self.status
-        }
+            'date_entree': self.date_entree,
+            'date_sortie': self.date_sortie,
+            'status': self.status,
+            'chambre': self.chambre.to_dict() if self.chambre else None,
+            'client': self.client.to_dict() if self.client else None
+    }
+
